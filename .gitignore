@@ -1,0 +1,41 @@
+# ==== 敏感文件：绝不入库 ====
+# 含服务器地址 / 密钥 / 口令，仅本地保留
+服务器运维手册.md
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+known_hosts
+
+# ==== 日志与运行时产物 ====
+*.log
+logs/
+tmp/
+temp/
+
+# ==== 依赖与构建产物 ====
+node_modules/
+dist/
+build/
+out/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+*.whl
+*.jar
+
+# ==== 编辑器 / 系统 ====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==== git 临时文件 ====
+.git/CM
